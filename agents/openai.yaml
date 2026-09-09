@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI 切图资产提取 v3"
+  short_description: "从单张无图层 UI 图片中逆向重建前端静态资源包。"
+  brand_color: "#68C45B"
+  default_prompt: "请从这张扁平 UI 图片中逆向识别并重建前端可用静态资源包，按资产类型选择裁切、SVG、脚本重建、生图重建、透明化、校验、预览和打包。"
+policy:
+  allow_implicit_invocation: true

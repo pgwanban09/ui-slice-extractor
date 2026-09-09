@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UI 切图资源清单 v3",
+  "type": "object",
+  "required": [
+    "project",
+    "source",
+    "assets"
+  ],
+  "properties": {
+    "project": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "filename",
+          "folder",
+          "type",
+          "format",
+          "transparent",
+          "source_basis",
+          "reconstruction_method",
+          "recommended_usage"
+        ],
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "folder": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "icon",
+              "logo",
+              "background",
+              "overlay",
+              "component",
+              "state-family",
+              "preview",
+              "other"
+            ]
+          },
+          "format": {
+            "type": "string"
+          },
+          "transparent": {
+            "type": "boolean"
+          },
+          "dimensions": {
+            "type": "string"
+          },
+          "source_basis": {
+            "type": "string"
+          },
+          "reconstruction_method": {
+            "type": "string",
+            "enum": [
+              "crop_or_isolate",
+              "svg_redraw",
+              "scripted_rebuild",
+              "imagegen_then_transparentize",
+              "background_reconstruction"
+            ]
+          },
+          "recommended_usage": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

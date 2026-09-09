@@ -1,0 +1,23 @@
+# Python cache and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated and temporary output
+ui-slice-output/
+*_asset_pack.zip
+*.tmp
+*.log
+
