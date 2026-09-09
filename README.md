@@ -120,17 +120,28 @@ UI Slice Extractor
 
 下面是一组实际测试流程。
 
-### 1. 原始 UI
-
-![原始 UI](docs/images/01-original-ui.jpg)
-
-### 2. AI 优化后的设计稿
-
-![AI 优化后的设计稿](docs/images/02-ai-redesign.jpg)
-
-### 3. 使用 Skill 扫描并重建的资源
-
-![切图资源预览](docs/images/03-extracted-assets.jpg)
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <strong>1. 原始 UI</strong><br>
+      <a href="docs/images/01-original-ui.jpg">
+        <img src="docs/images/01-original-ui.jpg" alt="原始 UI" width="260">
+      </a>
+    </td>
+    <td align="center" valign="top">
+      <strong>2. AI 优化后的设计稿</strong><br>
+      <a href="docs/images/02-ai-redesign.jpg">
+        <img src="docs/images/02-ai-redesign.jpg" alt="AI 优化后的设计稿" width="260">
+      </a>
+    </td>
+    <td align="center" valign="top">
+      <strong>3. 使用 Skill 扫描并重建的资源</strong><br>
+      <a href="docs/images/03-extracted-assets.jpg">
+        <img src="docs/images/03-extracted-assets.jpg" alt="切图资源预览" width="260">
+      </a>
+    </td>
+  </tr>
+</table>
 
 输出内容包括规则图标、状态图标、透明装饰层、食物图片、组件素材等。实际交付时还会生成资源清单、透明度校验报告、预览图和 ZIP 压缩包。
 
