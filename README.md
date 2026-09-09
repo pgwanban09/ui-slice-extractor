@@ -1,5 +1,33 @@
 # UI Slice Extractor v3
 
+## 给 Codex 安装
+
+把仓库下载到本地后，在仓库目录执行：
+
+```powershell
+.\install.ps1
+```
+
+安装脚本会把 Skill 复制到当前用户的 Codex Skill 目录：
+
+```text
+%USERPROFILE%\.codex\skills\ui-slice-extractor
+```
+
+重启 Codex 后，可以直接说：
+
+```text
+使用 UI Slice Extractor，从这张 PNG/UI 截图中提取完整的前端静态资源包。
+```
+
+也可以显式调用：
+
+```text
+$ui-slice-extractor 从这张 UI 截图中提取 logo、icon、背景和透明装饰，并生成 manifest、预览图和 ZIP。
+```
+
+完整安装说明见 [INSTALL.md](INSTALL.md)。
+
 从一张没有 Figma/PSD 图层的扁平 PNG、JPG 或 UI 截图中，识别并重建前端可复用的静态资源包。
 
 它不只是把截图裁成小块，而是先理解页面结构，再根据资产特点选择裁切、SVG 重绘、脚本重建、生图重建、透明化或背景重建。
