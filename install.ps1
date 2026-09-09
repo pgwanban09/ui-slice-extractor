@@ -4,12 +4,12 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$sourcePath = (Resolve-Path (Join-Path $PSScriptRoot ".")).Path
+$sourcePath = (Resolve-Path (Join-Path $PSScriptRoot "skills\ui-slice-extractor")).Path
 $codexSkillsRoot = Join-Path $env:USERPROFILE ".codex\skills"
 $targetPath = Join-Path $codexSkillsRoot "ui-slice-extractor"
 
 if (-not (Test-Path (Join-Path $sourcePath "SKILL.md"))) {
-    throw "SKILL.md was not found. Run this script from the cloned repository."
+    throw "skills\ui-slice-extractor\SKILL.md was not found. Run this script from the cloned repository."
 }
 
 if ((Test-Path $targetPath) -and -not $Force) {

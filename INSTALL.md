@@ -1,6 +1,14 @@
 # 安装到 Codex
 
-这个仓库是一个 Codex Skill，不是需要单独启动的应用。安装后，Codex 会在用户提供 UI 截图时自动判断是否使用它。
+这个仓库是一个 Codex Skill，不是需要单独启动的应用。Skill 位于 `skills/ui-slice-extractor/`，符合 Codex 的标准安装路径。
+
+用户可以直接把下面这句话发给 Codex：
+
+```text
+帮我安装这个 Skill：https://github.com/pgwanban09/ui-slice-extractor
+```
+
+Codex 应自动识别仓库中的 `skills/ui-slice-extractor`，调用 GitHub Skill 安装器并安装到当前用户的 Codex Skill 目录。若当前 Codex 版本要求显式路径，使用仓库路径 `skills/ui-slice-extractor`。
 
 ## Windows
 
@@ -53,7 +61,7 @@ $ui-slice-extractor 从这张扁平 UI 截图中提取 logo、icon、背景、�
 
 ## 运行辅助脚本
 
-脚本需要 Python 3。进入 Skill 目录后，可以执行：
+脚本需要 Python 3。进入 `skills/ui-slice-extractor/` 后，可以执行：
 
 ```powershell
 python scripts/validate_assets.py <output_dir>

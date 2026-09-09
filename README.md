@@ -26,7 +26,7 @@
 $ui-slice-extractor 从这张 UI 截图中提取 logo、icon、背景和透明装饰，并生成 manifest、预览图和 ZIP。
 ```
 
-完整安装说明见 [INSTALL.md](INSTALL.md)。
+完整安装说明见 [INSTALL.md](INSTALL.md)。Skill 源文件位于 `skills/ui-slice-extractor/`，符合 Codex 的标准 Skill 仓库布局。
 
 从一张没有 Figma/PSD 图层的扁平 PNG、JPG 或 UI 截图中，识别并重建前端可复用的静态资源包。
 
